@@ -35,5 +35,6 @@ function reset() {
 
 display();
 
+console.log('hello world');
 //this is a calculator
 
