@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(rgba(30, 144, 255, .5), rgba(30, 144, 255, .8));
+        }
+
+        .col-sm-3 {
+            cursor: pointer;
+            transition: .4s ease-in-out;
+        }
+
+        .col-sm-3:hover {
+            background-color: dodgerblue !important;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="row border border-2 border-primary bg-primary">
+                <div class="col-sm-12 text-end output fs-1 pe-3 ps-3 text-white">
+                    0
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-bg-dark border border-primary p-5 number seven element">
+                    7
+                </div>
+                <div class="col-sm-3 text-bg-dark border border-primary p-5 number eight  element">
+                    8
+                </div>
+                <div class="col-sm-3 text-bg-dark border border-primary  p-5 number nine  element">
+                    9
+                </div>
+                <div class="col-sm-3 text-bg-dark border border-primary  p-5 operator multiply  element">
+                    *
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3  text-bg-dark border border-primary p-5 number four  element">
+                    4
+                </div>
+                <div class="col-sm-3 text-bg-dark border border-primary  p-5 number five  element">
+                    5
+                </div>
+                <div class="col-sm-3  text-bg-dark border border-primary  p-5 number six  element">
+                    6
+                </div>
+                <div class="col-sm-3  text-bg-dark border border-primary  p-5 operator subtract  element">
+                    -
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-bg-dark border border-primary p-5 number one  element">
+                    1
+                </div>
+                <div class="col-sm-3  text-bg-dark border border-primary  p-5 number two  element">
+                    2
+                </div>
+                <div class="col-sm-3  text-bg-dark border border-primary  p-5 number three  element">
+                    3
+                </div>
+                <div class="col-sm-3  text-bg-dark border border-primary  p-5 operator add  element">
+                    +
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3  text-bg-dark border border-primary p-5 number zero  element">
+                    0
+                </div>
+                <div class="col-sm-3  text-bg-dark border border-primary  p-5 operator divide  element">
+                    /
+                </div>
+                <div onclick="reset()" class="col-sm-3  text-bg-danger border border-primary  p-5 clear">
+                    c
+                </div>
+                <div class="col-sm-3  text-bg-success border border-primary  p-5 equal" onclick="">
+                    =
+                </div>
+            </div>
+        </div>
+        <div id="demo"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
